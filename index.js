@@ -85,7 +85,9 @@ let hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", () => {
   let navbar = document.querySelector(".navbar");
   navbar.classList.toggle("active");
-  hamburger.classList.toggle("active");
+    hamburger.classList.toggle("active");
+    
+    let navitem  = document.querySelectorAll("nav-")
 });
 
 let links = document.querySelector(".a");

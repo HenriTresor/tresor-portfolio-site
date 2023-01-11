@@ -427,6 +427,7 @@ progress::-webkit-progress-value::before {
 
   .navbar.active .nav-items {
     flex-direction: column;
+    justify-content: center;
   }
 }
 
