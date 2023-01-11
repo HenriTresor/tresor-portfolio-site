@@ -18,6 +18,10 @@
   grid-template: 100% / 45vh auto;
 }
 
+.content{
+    padding: 30px;
+}
+
 .modal{
     display: none;
 }
