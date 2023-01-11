@@ -63,16 +63,13 @@ for (let i = 0; i < links.length; i++) {
   });
 }
 let randDiv = Math.floor(Math.random() * divContent.length);
-let currentDiv = divContent[randDiv]
+let currentDiv = divContent[randDiv];
 for (let u = 0; u < divContent.length; u++) {
   if (divContent[u].classList.contains("welcome-msg")) {
     let contBtn = document.querySelector(".continue-btn");
     contBtn.addEventListener("click", () => {
       document.querySelector(".intro-div").classList.remove("hidden");
-        document.querySelector(".welcome-msg").classList.add("hidden");
-    
+      document.querySelector(".welcome-msg").classList.add("hidden");
     });
-    }
-    
-
+  }
 }
