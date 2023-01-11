@@ -57,11 +57,24 @@ a[3].addEventListener("click", function () {
   for (let j = 0; j < divContent.length; j++) {
     divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.add("hidden");
+    document.querySelector(".triumph-div").classList.remove("hidden");
+
+    for (let g = 0; g < a.length; g++) {
+      a[g].classList.remove("active");
+      a[3].classList.add("active");
+    }
+  }
+});
+
+a[4].addEventListener("click", function () {
+  for (let j = 0; j < divContent.length; j++) {
+    divContent[j].classList.add("hidden");
+    document.querySelector(".welcome-msg").classList.add("hidden");
       document.querySelector(".cont-div").classList.remove("hidden");
       
         for (let g = 0; g < a.length; g++) {
           a[g].classList.remove("active");
-          a[3].classList.add("active");
+          a[4].classList.add("active");
         }
   }
 });
