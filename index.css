@@ -330,9 +330,6 @@ progress::-webkit-progress-value::before {
     grid-area: h;
     width: 100%;
   }
-  .navbar {
-    /* gap: 30px; */
-  }
   .nav-items {
     height: 100%;
     flex-direction: row;
@@ -406,7 +403,7 @@ progress::-webkit-progress-value::before {
     transform: scale(0.95);
 }
 .nav-items .nav-item.active{
-    background: rgb(75, 75, 75);
+    background: rgba(75, 75, 75, 0.537);
     border-radius: 5px;
 }
 
@@ -475,3 +472,9 @@ progress::-webkit-progress-value::before {
 }
 
 
+
+
+.nav-items .nav-item.active{
+    background: rgba(75, 75, 75, 0.537);
+    border-radius: 5px;
+}

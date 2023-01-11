@@ -7,7 +7,7 @@ for (let i = 0; i < a.length; i++) {
 }
 
 window.addEventListener("load", () => {
-  for (let j = 0; j < divContent.length; j++) {
+  for (j = 0; j < divContent.length; j++) {
     divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.remove("hidden");
     document.querySelector(".intro-div").classList.add("hidden");
@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 });
 
 a[0].addEventListener("click", function () {
-  for (let j = 0; j < divContent.length; j++) {
+  for (j = 0; j < divContent.length; j++) {
       divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.add("hidden");
     document.querySelector(".intro-div").classList.remove("hidden");
@@ -104,7 +104,8 @@ for (let u = 0; u < divContent.length; u++) {
     let contBtn = document.querySelector(".continue-btn");
     contBtn.addEventListener("click", () => {
       document.querySelector(".intro-div").classList.remove("hidden");
-      document.querySelector(".welcome-msg").classList.add("hidden");
+        document.querySelector(".welcome-msg").classList.add("hidden");
+        a[0].classList.add("active");
     });
   }
 }
