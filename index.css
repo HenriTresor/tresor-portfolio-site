@@ -18,6 +18,10 @@
   grid-template: 100% / 45vh auto;
 }
 
+.modal{
+    display: none;
+}
+
 .container::-webkit-scrollbar {
   width: 12px;
   background: 12px;
@@ -367,6 +371,41 @@ progress::-webkit-progress-value::before {
 }
 
 @media (max-width: 600px) {
+
+    .modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: black;
+    color: white;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.modal h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal button{
+    font-size: 20px;
+    padding:10px 50px ;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.modal button:active{
+    transform: scale(0.95);
+}
+.nav-items .nav-item.active{
+    background: rgb(75, 75, 75);
+    border-radius: 5px;
+}
+
   .navbar {
     display: none;
   }
@@ -432,7 +471,3 @@ progress::-webkit-progress-value::before {
 }
 
 
-.nav-items .nav-item.active{
-    background: rgb(75, 75, 75);
-    border-radius: 5px;
-}

@@ -108,3 +108,9 @@ for (let u = 0; u < divContent.length; u++) {
     });
   }
 }
+
+
+let killModalBtn = document.querySelector("#kill");
+killModalBtn.addEventListener("click", () => {
+    document.querySelector(".modal").style.display = 'none';
+})
