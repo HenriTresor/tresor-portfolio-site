@@ -255,6 +255,7 @@ progress::-webkit-progress-value::before {
     font-size: 18px;
     transition: 300ms ease;
     font-family: Roboto;
+    cursor: pointer;
 
 }
 .cont-div #github{
@@ -262,7 +263,7 @@ progress::-webkit-progress-value::before {
     color: white;
 }
 
-#github:hover,.cont-div #github:hover{
+#githubS:hover,.cont-div #github:hover{
     outline: 2px solid rgba(0, 0, 0, 0.906);
     color: rgba(0, 0, 0, 0.906);
     background: white;
