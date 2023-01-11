@@ -16,17 +16,27 @@ window.addEventListener("load", () => {
 
 a[0].addEventListener("click", function () {
   for (let j = 0; j < divContent.length; j++) {
-    divContent[j].classList.add("hidden");
+      divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.add("hidden");
     document.querySelector(".intro-div").classList.remove("hidden");
-  }
+    }
+    
+    for (let g = 0; g < a.length; g++){
+        a[g].classList.remove("active");
+        a[0].classList.add("active")
+    }
 });
 
 a[1].addEventListener("click", function () {
   for (let j = 0; j < divContent.length; j++) {
     divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.add("hidden");
-    document.querySelector(".skill-div").classList.remove("hidden");
+      document.querySelector(".skill-div").classList.remove("hidden");
+      
+        for (let g = 0; g < a.length; g++) {
+          a[g].classList.remove("active");
+          a[1].classList.add("active");
+        }
   }
 });
 
@@ -34,7 +44,12 @@ a[2].addEventListener("click", function () {
   for (let j = 0; j < divContent.length; j++) {
     divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.add("hidden");
-    document.querySelector(".project-div").classList.remove("hidden");
+      document.querySelector(".project-div").classList.remove("hidden");
+      
+        for (let g = 0; g < a.length; g++) {
+          a[g].classList.remove("active");
+          a[2].classList.add("active");
+        }
   }
 });
 
@@ -42,7 +57,12 @@ a[3].addEventListener("click", function () {
   for (let j = 0; j < divContent.length; j++) {
     divContent[j].classList.add("hidden");
     document.querySelector(".welcome-msg").classList.add("hidden");
-    document.querySelector(".cont-div").classList.remove("hidden");
+      document.querySelector(".cont-div").classList.remove("hidden");
+      
+        for (let g = 0; g < a.length; g++) {
+          a[g].classList.remove("active");
+          a[3].classList.add("active");
+        }
   }
 });
 
